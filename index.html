@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Volviendo a Alitera…</title>
+<style>
+  body {
+    font-family: -apple-system, sans-serif;
+    background: #1E1E1C;
+    color: #EDEAE2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+    padding: 24px;
+    box-sizing: border-box;
+  }
+  a {
+    color: #91ADCA;
+    font-size: 1.1em;
+    text-decoration: none;
+    border: 1px solid #91ADCA;
+    padding: 12px 24px;
+    border-radius: 8px;
+    display: inline-block;
+    margin-top: 20px;
+  }
+</style>
+</head>
+<body>
+<div>
+  <p>Volviendo a Alitera…</p>
+  <a id="link" href="#">Si no vuelves automáticamente, toca aquí</a>
+</div>
+<script>
+  var target = 'bookcloud://' + window.location.search;
+  document.getElementById('link').href = target;
+  window.location.href = target;
+</script>
+</body>
+</html>
